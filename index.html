@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Anjana</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <h1 class="logo">Anjana</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <div>
+                <p class="subtitle">HTML & CSS Portfolio</p>
+                <h2>Hi, I'm Anjana 👋</h2>
+                <p>I am learning web development and this portfolio showcases the projects I have built in my HTML and CSS course.</p>
+                <a href="#projects" class="btn">View My Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I am a beginner front-end developer learning the fundamentals of HTML and CSS.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>1. Portfolio Website</h3>
+                        <p>A personal portfolio website built using HTML & CSS.</p>
+                    </article>
+                    <article class="project-card">
+                        <h3>2. Basic Landing Page</h3>
+                        <p>A simple landing page built to practice structure and styling.</p>
+                    </article>
+                    <article class="project-card">
+                        <h3>3. Multi-Section Web Page</h3>
+                        <p>A multi-section webpage created to practice semantic HTML.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Responsive Design</li>
+                    <li>GitHub & GitHub Pages</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <h2>Contact</h2>
+                <ul class="contact-list">
+                    <li><strong>Email:</strong> your-email@example.com</li>
+                    <li><strong>GitHub:</strong> https://github.com/YOUR-USERNAME</li>
+                    <li><strong>Location:</strong> Toronto, Canada</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Anjana. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
